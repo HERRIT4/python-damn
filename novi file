@@ -1,0 +1,9 @@
+n = int(input("количество дел "))
+l = []
+for i in range(n):
+    b = str(input("дело "))
+    l.append(b)
+f = open("dela.txt", "w+")
+for element in l:
+     f.write(element + " ")
+f.close()
